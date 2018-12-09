@@ -2,27 +2,27 @@
   "name": "bam-components",
   "version": "0.0.1",
   "description": "",
-  "main": "dist/index.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "files": [
-    "dist"
+    "lib"
   ],
   "peerDependencies": {
     "react": "16.6.3",
     "react-dom": "16.6.3"
   },
   "scripts": {
-    "start": "yarn build --watch",
-    "build": "babel src -d dist --copy-files",
+    "start": "tsc --watch",
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
+    "@types/react": "^16.7.13",
     "react": "16.6.3",
-    "react-dom": "16.6.3"
+    "react-dom": "16.6.3",
+    "typescript": "3.2.2"
   }
 }

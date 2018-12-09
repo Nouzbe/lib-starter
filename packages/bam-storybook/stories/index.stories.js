@@ -5,9 +5,9 @@ import { withReadme } from "storybook-readme";
 import { text } from "@storybook/addon-knobs";
 
 import { Hello } from "bam-components";
-import ReadMe from "../button/README.md";
+import ReadMe from "./README.md";
 
-storiesOf("Button", module)
+storiesOf("Hello", module)
   .add(
     "with text",
     withReadme(ReadMe, () => <Hello name={text("name", "Bim")} />)
