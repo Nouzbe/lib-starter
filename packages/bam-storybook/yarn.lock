@@ -1790,6 +1790,11 @@ balanced-match@^1.0.0:
   resolved "https://registry.yarnpkg.com/balanced-match/-/balanced-match-1.0.0.tgz#89b4d199ab2bee49de164ea02b89ce462d71b767"
   integrity sha1-ibTRmasr7kneFk6gK4nORi1xt2c=
 
+bam-components@0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/bam-components/-/bam-components-0.0.1.tgz#982cac0cbea8baa23617e5bfbfa4031e490b0c29"
+  integrity sha512-qsiVNSNJK2XSE3zna5+LJ4k7Fw8ApU1vKaq8reWgE7uVu6hz7SkFDkgJVu7sj8+J9LX/pGnlB93UzpYr9fWSCw==
+
 base64-js@^1.0.2:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/base64-js/-/base64-js-1.3.0.tgz#cab1e6118f051095e58b5281aea8c1cd22bfc0e3"

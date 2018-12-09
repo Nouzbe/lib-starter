@@ -3,12 +3,13 @@ import React from "react";
 import { storiesOf } from "@storybook/react";
 import { withReadme } from "storybook-readme";
 import { text } from "@storybook/addon-knobs";
-import Button from "../button";
+
+import { Hello } from "bam-components";
 import ReadMe from "../button/README.md";
 
 storiesOf("Button", module)
   .add(
     "with text",
-    withReadme(ReadMe, () => <Button name={text("name", "Bam")} />)
+    withReadme(ReadMe, () => <Hello name={text("name", "Bim")} />)
   )
-  .add("with some emoji", () => <Button name="😀 😎 👍 💯" />);
+  .add("with some emoji", () => <Hello name="😀 😎 👍 💯" />);
