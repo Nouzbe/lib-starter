@@ -1,0 +1,23 @@
+{
+  "name": "bam-storybook",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "react": "16.6.3",
+    "@storybook/addon-options": "^4.0.12",
+    "storybook-readme": "^4.0.2",
+    "react-dom": "16.6.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.0",
+    "@storybook/addon-knobs": "^4.0.12",
+    "@storybook/addons": "^4.0.12",
+    "@storybook/react": "^4.0.12",
+    "babel-loader": "^8.0.4"
+  },
+  "scripts": {
+    "start": "start-storybook -p 3000",
+    "build": "build-storybook"
+  }
+}

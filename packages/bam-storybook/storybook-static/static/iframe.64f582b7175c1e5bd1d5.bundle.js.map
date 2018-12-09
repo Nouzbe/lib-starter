@@ -1,0 +1,1 @@
+{"version":3,"file":"static/iframe.64f582b7175c1e5bd1d5.bundle.js","sources":["webpack:///./button/index.js"],"sourcesContent":["import React from \"react\";\r\n\r\nconst Hello = ({ name }) => <div>Hello {name}!</div>;\r\n\r\nexport default Hello;\r\n"],"mappings":"AAAA","sourceRoot":""}
