@@ -9,6 +9,7 @@
     "exclude": ["**/node_modules/**/*.{ts,tsx}"]
   },
   "rules": {
-    "ordered-imports": false
+    "ordered-imports": false,
+    "no-implicit-dependencies": [true, "dev"]
   }
 }
