@@ -1,9 +1,9 @@
 import * as React from "react";
 
-export interface HelloProps {
+export interface IHelloProps {
   name: string;
 }
 
-const Hello = ({ name }: HelloProps) => <div>Hello {name}</div>;
+const Hello = ({ name }: IHelloProps) => <div>Hello {name}</div>;
 
 export default Hello;

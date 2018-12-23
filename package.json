@@ -4,9 +4,43 @@
   "scripts": {
     "postinstall": "lerna bootstrap",
     "start": "lerna run start --parallel",
-    "build": "lerna run build --parallel"
+    "build": "lerna run build --parallel",
+    "prettier": "prettier \"packages/{components,storybook}/src/**/*.{js,jsx,ts,tsx,json,md}\" --list-different",
+    "eslint": "eslint \"packages/storybook/src/**/*.{js,jsx}\" --max-warnings 0",
+    "tslint": "tslint \"packages/components/src/**/*.{ts,tsx}\"",
+    "lint": "yarn eslint && yarn tslint"
   },
   "devDependencies": {
-    "lerna": "^3.5.1"
+    "babel-eslint": "10.0.1",
+    "eslint": "5.11.0",
+    "eslint-config-prettier": "3.3.0",
+    "eslint-plugin-import": "2.14.0",
+    "eslint-plugin-react": "7.11.0",
+    "husky": "1.2.1",
+    "lerna": "^3.5.1",
+    "lint-staged": "8.1.0",
+    "prettier": "1.15.3",
+    "tslint": "5.12.0",
+    "tslint-config-prettier": "1.17.0",
+    "tslint-eslint-rules": "5.4.0",
+    "tslint-react": "3.6.0",
+    "typescript": "2.9.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "packages/components/src/**/*.{ts,tsx,json}": [
+      "prettier --write",
+      "tslint ./packages/storybook/src/**/*.{ts,tsx} --fix",
+      "git add"
+    ],
+    "packages/storybook/src/**/*.{js,jsx,json}": [
+      "prettier --write",
+      "eslint ./packages/storybook/src/**/*.{js,jsx} --fix",
+      "git add"
+    ]
   }
 }
