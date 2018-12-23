@@ -1,11 +1,11 @@
 {
-  "name": "bam-storybook",
+  "name": "storybook",
   "version": "0.0.1",
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
     "@storybook/addon-options": "^4.0.12",
-    "bam-components": "0.0.1",
+    "components": "0.0.1",
     "react": "16.6.3",
     "react-dom": "16.6.3",
     "storybook-readme": "^4.0.2"
@@ -19,6 +19,6 @@
   },
   "scripts": {
     "start": "start-storybook -p 3000",
-    "build": "build-storybook"
+    "build": "build-storybook --output-dir build"
   }
 }
