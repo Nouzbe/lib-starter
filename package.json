@@ -2,7 +2,8 @@
   "name": "root",
   "private": true,
   "scripts": {
-    "start": "lerna run start --parallel --include-filtered-dependencies --scope bam-components --scope bam-storybook"
+    "start": "lerna run start --parallel --scope bam-components --scope bam-storybook",
+    "build": "lerna run build --parallel --scope bam-components --scope bam-storybook"
   },
   "devDependencies": {
     "lerna": "^3.5.1"
